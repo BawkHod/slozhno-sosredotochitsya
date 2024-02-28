@@ -18,10 +18,10 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
+  padding-inline: 10px;
+  padding-block: 10px;
   block-size: 100vh;
   min-block-size: 668px;
-  padding-block: 10px;
-  padding-inline: 10px;
 }
 
 .content {
@@ -37,10 +37,10 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  inline-size: 25px;
-  block-size: 25px;
   border-top: 1px solid var(--decor-color);
   border-right: 1px solid var(--decor-color);
+  inline-size: 25px;
+  block-size: 25px;
 }
 
 .decorated-zone::before {
@@ -48,10 +48,10 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
-  inline-size: 25px;
-  block-size: 25px;
   border-bottom: 1px solid var(--decor-color);
   border-left: 1px solid var(--decor-color);
+  inline-size: 25px;
+  block-size: 25px;
 }
 
 .header__logo {
@@ -66,11 +66,11 @@
 .header__logo::after {
   content: "";
   display: inline-block;
-  inline-size: 9px;
-  block-size: 9px;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--bg-accent-color);
   background-color: var(--bg-accent-color);
+  inline-size: 9px;
+  block-size: 9px;
 }
 
 .header__theme-menu {
@@ -87,8 +87,8 @@
 .header__theme-menu-button {
   display: block;
   border: 1px solid transparent;
-  padding-block: 1px 5px;
   padding-inline: 13px;
+  padding-block: 1px 5px;
   color: var(--button-color);
   font-weight: 400;
   font-size: 18px;
@@ -210,10 +210,10 @@
 
 .content__section-image {
   display: block;
-  inline-size: 100%;
-  block-size: 100%;
   object-fit: cover;
   object-position: center;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .footer {
@@ -221,10 +221,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-block-start: 42px;
   inline-size: 100%;
   block-size: 100vh;
   min-block-size: 668px;
-  margin-block-start: 42px;
 }
 
 .footer__title {
@@ -240,8 +240,8 @@
 @media (width >= 768px) {
 
   .header {
-      padding-block: 20px;
       padding-inline: 20px;
+      padding-block: 20px;
   }
 
   .decorated-zone::after {
@@ -272,8 +272,8 @@
 
   .content {
       gap: 80px;
-      padding-block: 20px 0;
       padding-inline: 20px;
+      padding-block: 20px 0;
   }
 
   .content__section-what .content__section-header {
@@ -383,8 +383,8 @@
   }
 
   .content__section-what .content__section-header {
-      max-inline-size: 315px;
       margin-block-end: 22px;
+      max-inline-size: 315px;
   }
 
   .content__section-howto {
@@ -392,7 +392,7 @@
   }
 
   .footer {
-      min-block-size: 768px;
       margin-block-start: 60px;
+      min-block-size: 768px;
   }
 }
