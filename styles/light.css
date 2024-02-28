@@ -7,7 +7,7 @@
 
 .page.theme_light {
   --bg-color: #FFF1F7;
-  --main-font: IBM Plex Mono, sans-serif;
+  --main-font: IBM Plex Mono, monospace;
   --bg-accent-color: #FF8DCB;
   --header-shadow-color: #FF8DCB;
   --text-color: #353430;
